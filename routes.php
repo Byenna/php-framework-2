@@ -27,8 +27,8 @@ $router->get('me', 'App/Controllers/ProfileController.php@index', 'me');
 $router->get('contact', 'App/Controllers/ContactController.php@index', 'contact');
 
 $router->get('chocolats', 'App/Controllers/ChocolatsController.php@index', 'chocolats');
-$router->get('trees', 'App/Controllers/TreesController.php@index', 'trees');
-$router->get('flowers', 'App/Controllers/FlowersController.php@index', 'flowers');
+$router->get('about', 'App/Controllers/AboutController.php@index', 'about');
+$router->get('volunteer', 'App/Controllers/VolunteerController.php@index', 'volunteer');
 
 $router->get('register', 'App/Controllers/RegisterController.php@index', 'register');
 $router->post('register', 'App/Controllers/RegisterController.php@store', 'register.store');
@@ -48,6 +48,5 @@ $router->post('user/{id}/update', 'App/Controllers/UserController.php@update', '
 $router->get('user/{id}/destroy', 'App/Controllers/UserController.php@destroy', 'admin.user.destroy', ['delete' => Permissions::class]);
 
 //Product routes
-// $router->get('products', 'App/Controllers/ProductController.php@index', 'products');
-// $router->get('products/{id}', 'App/Controllers/ProductController.php@show', 'products.show');
 $router->get('products', 'App/Controllers/ProductController.php@index', 'products');
+$router->get('products/{id}', 'App/Controllers/ProductController.php@show', 'products.show');

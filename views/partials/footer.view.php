@@ -1,5 +1,3 @@
-<!-- <footer class="footer">Footer</footer> -->
-
 <footer class="container-fluid">
 	<div class="row">
 		<div class="col text-center  fs-4 flex-nowrap ">

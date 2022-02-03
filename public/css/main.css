@@ -1,13 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@font-face { font-family: cardenio-modern; src: url('/public/css/fonts/Cardenio\ Modern\ Std.ttf'); } 
+
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    background-image: url("/public/images/website/woman_eats_apple.jpg");
+    background-color: #a2b761;
+    background-attachment: fixed;
+    font-family: cardenio-modern ,Helvetica,Arial,sans-serif;
+    color: #233411;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: cardenio-modern ,Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px 0;
+  }
+
+.btn {
+    background-color: #a2b761;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .header {
     height: 200px;
-    background-color: #9eafb7;
+    /* background-color: #9eafb7; */
     width: 100%;
     color: white;
 }
@@ -21,12 +41,6 @@ body {
     padding-bottom: 2.5rem;
 }
 
-.footer {
-    height: 200px;
-    background-color: black;
-    width: 100%;
-    color: white;
-}
 
 .cart-icon {
     cursor: pointer;
