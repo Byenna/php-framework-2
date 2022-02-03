@@ -52,12 +52,15 @@ class ProductController extends Controller
 
     public function show()
     {
-        // $productId = Helper::getIdFromUrl('products');
+        $productId = Helper::getIdFromUrl('products');
         
-        // $product = ProductModel::load()->get($productId);
+        $product = ProductModel::load()->get($productId);
         
-        // return View::render('products/show.view', [
-        //     'product'   =>  $product, 
-        // ]);
+        return View::render('products/show.view', [
+            'name'   =>  $product -> name, 
+            'description'   =>  $product -> description, 
+            'price'   =>  $product -> price, 
+            'stock'   =>  $product -> stock, 
+        ]);
     }
 }

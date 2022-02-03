@@ -10,9 +10,10 @@
 
     <!-- have to search for w3 node module -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     
+    <link rel='stylesheet' type='text/css' media='screen' href='/public/css/details.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/public/css/volunteer.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/public/css/about.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/public/css/footer.css'>
