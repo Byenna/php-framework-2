@@ -11,7 +11,7 @@
 
         <div class="row mb-4 ">
             <div class="col-md-4 "></div>
-            <div class="col-md-4 text-white text-center "><h1 class="text-nowrap display-1">De producten</h1></div>
+            <div class="col-md-4 text-white text-center "><h1 class="text-nowrap display-1">De productendetails</h1></div>
             <div class="col-md-4"></div>
         </div>
      

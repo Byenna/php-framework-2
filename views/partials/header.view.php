@@ -25,7 +25,7 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item fs-4" href="/about">Wie zijn wij?</a></li>
 							<li><a class="dropdown-item fs-4" href="/volunteer">Vrijwilliger worden?</a></li>
-							<li><a class="dropdown-item fs-4" href="/detail">Naar de details pagina</a></li>
+							<li><a class="dropdown-item fs-4" href="/products">Naar de details pagina</a></li>
 						</ul>
 					</li>
 				</ul>
