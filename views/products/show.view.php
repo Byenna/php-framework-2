@@ -1,4 +1,4 @@
-
+<?php require 'views/partials/header.view.php' ?>
 <section class="bg-overlay ">
 
 <div class="row">
@@ -9,9 +9,17 @@
     <h2 class="text-center text-white display-1"><?= $name ?></h2>
 </div>
 
+<div class="container-xl ">
+    <div class="row">
+        <div class="col-md justify-content-center">
+            <h2 class="text-center text-white display-1"><img src='<?= $image ?>' width="250"></h2>
+         </div>
+    </div>
+</div>
+
 <div class="container-xl pt-4 detail_background">
     
-    <product></product>
+    
 
     <!-- Tabs or Pills can be used in a card with the help of .nav-{tabs|pills} and .card-header-{tabs|pills} classes -->
     <div class="card card_detail">
@@ -129,21 +137,21 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="/assets/images/xradijs.jpg" class="img_carousel d-block w-100" alt="Slide 1">
+                <img src="/public/images/webshop/xradijs.jpg" class="img_carousel d-block w-100" alt="Slide 1">
                 <div class="carousel-caption d-none d-sm-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/assets/images/xbosbessen.jpg" class="img_carousel d-block w-100" alt="Slide 2">
+                <img src="/public/images/webshop/xbosbessen.jpg" class="img_carousel d-block w-100" alt="Slide 2">
                 <div class="carousel-caption d-none d-sm-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="/assets/images/xdruiven.jpg" class="img_carousel d-block w-100" alt="Slide 3">
+                <img src="/public/images/webshop/xdruiven.jpg" class="img_carousel d-block w-100" alt="Slide 3">
                 <div class="carousel-caption d-none d-sm-block">
                     <h5>Third slide label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -160,4 +168,5 @@
         </a>
     </div>
 </section>
+<?php require 'views/partials/footer.view.php' ?>
 

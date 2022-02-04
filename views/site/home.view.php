@@ -2,4 +2,5 @@
     <div class="container">
         <products></products>
     </div>
+    
 <?php require 'views/partials/footer.view.php' ?>

@@ -39,4 +39,15 @@ class HomeController
             ]);
         }
     }
+
+    public function about()
+    {
+        return View::render('about/about.view');
+    }
+
+    public function home_text()
+    {
+        return View::render('home_text/home_text.view');
+    }
 }
+

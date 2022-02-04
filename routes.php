@@ -14,7 +14,7 @@
 use App\Middleware\WhenNotLoggedin;
 use App\Middleware\Permissions;
 
-$router->get('', 'App/Controllers/HomeController.php@index', 'root');
+$router->get('home_text', 'App/Controllers/HomeController.php@home_text', 'root');
 $router->get('home', 'App/Controllers/HomeController.php@index', 'home');
 $router->get('home/products', 'App/Controllers/HomeController.php@products', 'home.products');
 
@@ -27,7 +27,7 @@ $router->get('me', 'App/Controllers/ProfileController.php@index', 'me');
 $router->get('contact', 'App/Controllers/ContactController.php@index', 'contact');
 
 $router->get('chocolats', 'App/Controllers/ChocolatsController.php@index', 'chocolats');
-$router->get('about', 'App/Controllers/AboutController.php@index', 'about');
+$router->get('about', 'App/Controllers/HomeController.php@about', 'about');
 $router->get('volunteer', 'App/Controllers/VolunteerController.php@index', 'volunteer');
 
 $router->get('register', 'App/Controllers/RegisterController.php@index', 'register');

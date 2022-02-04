@@ -14,6 +14,9 @@ class ProductController extends Controller
 
         return View::render('products/index.view', [
             'products'  => $products,
+            'image'         =>  '/public/images/webshop/' 
+        
+
         ]);
     }
 
@@ -57,10 +60,11 @@ class ProductController extends Controller
         $product = ProductModel::load()->get($productId);
         
         return View::render('products/show.view', [
-            'name'   =>  $product -> name, 
+            'name'          =>  $product -> name, 
+            'image'         =>  '/public/images/webshop/' . $product -> image , 
             'description'   =>  $product -> description, 
-            'price'   =>  $product -> price, 
-            'stock'   =>  $product -> stock, 
+            'price'         =>  $product -> price, 
+            'stock'         =>  $product -> stock, 
         ]);
     }
 }
