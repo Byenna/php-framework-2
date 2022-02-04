@@ -1,10 +1,9 @@
-<?php require 'views/partials/header.view.php' ?>
-
 <section class="bg-overlay ">
 
-	<!-- <div class="row">
-		<div class="col space_above_content"></div>
-	</div> -->
+<?php require 'views/partials/header.view.php' ?>
+
+
+
 
 	<div class="container-xl">
 		<h2 class="text-center text-white display-1">Wordt ook vrijwilliger in ons Voedselbos!</h2>

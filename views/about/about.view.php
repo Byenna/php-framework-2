@@ -1,10 +1,7 @@
-<?php require 'views/partials/header.view.php' ?>
 
 <section class="bg-overlay ">
+<?php require 'views/partials/header.view.php' ?>
 
-	<div class="row">
-		<div class="col space_above_content"></div>
-	</div>
 
 	<div class="container-xl">
 		<h2 class="text-center text-white display-1">Wie zijn wij?</h2>
@@ -50,5 +47,6 @@
 	<div class="row">
 		<div class="col space_under_content"></div>
 	</div>
+
 </section>
 <?php require 'views/partials/footer.view.php' ?>

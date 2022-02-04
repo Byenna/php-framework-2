@@ -1,12 +1,11 @@
-<div class="login-overlay">
+<?php require 'views/partials/header.view.php' ?>
+
+<div class="register-overlay">
     <div class="center-box register-form">
         <div class="mb-3">
-            <span class="guitar-icon">
-                <img src="/public/images/codegorilla-logo.png">
-                <div>
-                    <h3>Register</h3>
-                </div>
-            </span>
+            <div>
+                <h3>Register</h3>
+             </div>
         </div>
 
         <div class="alert alert-danger" id="register-message" role="alert"></div>
