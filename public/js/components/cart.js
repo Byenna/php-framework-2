@@ -41,7 +41,7 @@ Vue.component('shopping-cart', {
         </div>
 
         <div class="row mb-3" v-for="item in cart.items"><hr />
-            <div class="col-md-2 "><img class='border_image_cart' :src="'/assets/images/' + item.image" width="100%"></div>                   
+            <div class="col-md-2 "><img class='border_image_cart' :src="'/public/images/webshop/' + item.image" width="100%"></div>                   
             <div class="col-md-3">{{ item.name }}</div>
             <div class="col-md-2">{{ item.amount }}</div>
             <div class="col-md-2"> € {{ item.price }}</div>
@@ -57,8 +57,8 @@ Vue.component('shopping-cart', {
         </div>
 
         <div class="row cart-footer justify-content-center">
-            <a href="/?page=items" class="col-md-5 btn btn_verder_winkelen mt-3 fs-3"><i class="fs-3 fa fa-arrow-left"></i>Verder winkelen</a>
-            <a href="/?page=checkout" class="col-md-3 btn mt-3 fs-3">Afrekenen</a>
+            <a href="/home" class="col-md-5 btn btn_verder_winkelen mt-3 fs-3"><i class="fs-3 fa fa-arrow-left"></i>Verder winkelen</a>
+            <a href="/checkout" class="col-md-3 btn mt-3 fs-3">Afrekenen</a>
         </div>
     </div>
 </div>

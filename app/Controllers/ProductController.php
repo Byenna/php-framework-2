@@ -12,12 +12,17 @@ class ProductController extends Controller
     {
         $products = ProductModel::load()->all();
 
+
         return View::render('products/index.view', [
             'products'  => $products,
-            'image'         =>  '/public/images/webshop/' 
+          
         
 
         ]);
+
+       
+        
+
     }
 
     public function create()

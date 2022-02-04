@@ -1,5 +1,7 @@
-<?php require 'views/partials/header.view.php' ?>
 <section class="bg-overlay ">
+
+<?php require 'views/partials/header.view.php' ?>
+
 
 <div class="row">
     <div class="col space_above_content"></div>

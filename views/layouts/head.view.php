@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     
+    <link rel='stylesheet' type='text/css' media='screen' href='/public/css/products.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/public/css/register.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/public/css/login.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/public/css/home_text.css'>

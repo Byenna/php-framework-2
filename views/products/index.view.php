@@ -1,6 +1,8 @@
 
+   <section class="bg-overlay">
+
 <?php require 'views/partials/header.view.php' ?>
-        <section class="bg-overlay">
+     
         <div class="container">
     
         <div class="row">
@@ -19,7 +21,7 @@
             
                 <div class="card border-0">
                     
-                    <img src=" <?= $product->image ?>" class="img_items card-img-top shadow rounded-top" alt="<?= $product->image ?>">
+                    <img src="<?= '/public/images/webshop/' . $product->image ?> " class="img_items card-img-top shadow rounded-top" alt="<?= $product->image ?>">
                 
                     <div class="card_body_items card-body">
                         <h5 class="card-title fs-3 fw-bold"><?= $product->name ?></h5>
@@ -39,8 +41,10 @@
                     </div>
                 </div>
             </div>
-
+            
             <?php endforeach ?> 
+
+            
         </div>
 
     </div>
