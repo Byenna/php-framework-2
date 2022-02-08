@@ -22,7 +22,7 @@ class UserController extends Controller
         
         return View::render('users/index.view', [
             'users'     => $users,
-            'kiekeboo'  => 'Hallootjes',
+            
         ]);
 
     }

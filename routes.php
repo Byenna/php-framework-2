@@ -14,7 +14,7 @@
 use App\Middleware\WhenNotLoggedin;
 use App\Middleware\Permissions;
 
-$router->get('home_text', 'App/Controllers/HomeController.php@home_text', 'root');
+$router->get('', 'App/Controllers/HomeController.php@home_text', 'root');
 $router->get('home', 'App/Controllers/HomeController.php@index', 'home');
 $router->get('home/products', 'App/Controllers/HomeController.php@products', 'home.products');
 
@@ -50,3 +50,4 @@ $router->get('user/{id}/destroy', 'App/Controllers/UserController.php@destroy', 
 //Product routes
 $router->get('products', 'App/Controllers/ProductController.php@index', 'products');
 $router->get('products/{id}', 'App/Controllers/ProductController.php@show', 'products.show');
+$router->get('user/{id}/edit', 'App/Controllers/UserController.php@edit', 'admin.user.edit', ['update' => Permissions::class]);
