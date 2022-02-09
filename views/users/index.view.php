@@ -1,6 +1,6 @@
 <section class="bg-overlay">
 
-<?php require 'views/partials/header.view.php' ?>
+<?php require 'views/admin/partials/header.view.php' ?>
  
 
 <div class=" container-sm">
@@ -16,8 +16,7 @@
     <h5 class="fs-2 card-title"><?= $user -> first_name ?> <?= $user -> last_name ?></h5>
     <h6 class="fs-4 card-subtitle mb-2 text-muted"><?= $user -> city ?></h6>
     <p class="card-text">Email: <?= $user -> email ?></p>
-    <a href="#" class="card-link">Edit</a>
-    <a href="#" class="card-link">Update</a>
+    <a href="/user/<?= $user -> id ?>" class="card-link">Show</a>
   </div>
 </div>
      <?php endforeach ?> 
@@ -28,4 +27,4 @@
 
    
  
-<?php require 'views/partials/footer.view.php' ?> 
+<?php require 'views/admin/partials/footer.view.php' ?>

@@ -55,7 +55,10 @@ class UserController extends Controller
         $user['created'] = date('Y-m-d H:i:s');
 
         // Save the record to the database
-        UserModel::load()->store($user);
+        UserModel::load()->store((array)$user);
+
+     
+
     }
 
     /**
@@ -65,7 +68,7 @@ class UserController extends Controller
     {
         $userId = Helper::getIdFromUrl('user');
         
-        $user = UserModel::load()->get($userId);
+        $user = UserModel::load()->get((int)$userId);
 
         return View::render('users/edit.view', [
             'method'    => 'POST',
@@ -89,7 +92,7 @@ class UserController extends Controller
         $user['updated_by'] = Helper::getUserIdFromSession();
         $user['updated'] = date('Y-m-d H:i:s');
 
-        UserModel::load()->update($user, $userId);
+        UserModel::load()->update($user, (int)$userId);
     }
 
     /**
@@ -99,7 +102,7 @@ class UserController extends Controller
     {
         $userId = Helper::getIdFromUrl('user');
         
-        $user = UserModel::load()->get($userId);
+        $user = UserModel::load()->get((int)$userId);
 
         return View::render('users/show.view', [
             'user'  => $user,
@@ -113,7 +116,7 @@ class UserController extends Controller
     {
         $userId = Helper::getIdFromUrl('user');
 
-        UserModel::load()->destroy($userId);
+        UserModel::load()->destroy((int)$userId);
     }
 
 }

@@ -50,4 +50,3 @@ $router->get('user/{id}/destroy', 'App/Controllers/UserController.php@destroy', 
 //Product routes
 $router->get('products', 'App/Controllers/ProductController.php@index', 'products');
 $router->get('products/{id}', 'App/Controllers/ProductController.php@show', 'products.show');
-$router->get('user/{id}/edit', 'App/Controllers/UserController.php@edit', 'admin.user.edit', ['update' => Permissions::class]);

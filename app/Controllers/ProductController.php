@@ -62,7 +62,7 @@ class ProductController extends Controller
     {
         $productId = Helper::getIdFromUrl('products');
         
-        $product = ProductModel::load()->get($productId);
+        $product = ProductModel::load()->get((int)$productId);
         
         return View::render('products/show.view', [
             'name'          =>  $product -> name, 
