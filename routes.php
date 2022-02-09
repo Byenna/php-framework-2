@@ -39,13 +39,20 @@ $router->get('admin', 'App/Controllers/AdminController.php@index', 'admin',[
 
 
 // User routes
-$router->get('user', 'App/Controllers/UserController.php@index', 'admin.user.index', ['show' => Permissions::class]);
-$router->get('user/create', 'App/Controllers/UserController.php@create', 'admin.user.create', ['create' => Permissions::class]);
-$router->post('user/store', 'App/Controllers/UserController.php@store', 'admin.user.store', ['create' => Permissions::class]);
-$router->get('user/{id}', 'App/Controllers/UserController.php@show', 'admin.user.show', ['read' => Permissions::class]);
-$router->get('user/{id}/edit', 'App/Controllers/UserController.php@edit', 'admin.user.edit', ['update' => Permissions::class]);
-$router->post('user/{id}/update', 'App/Controllers/UserController.php@update', 'admin.user.update', ['update' => Permissions::class]);
-$router->get('user/{id}/destroy', 'App/Controllers/UserController.php@destroy', 'admin.user.destroy', ['delete' => Permissions::class]);
+// , ['show' => Permissions::class]
+// , ['create' => Permissions::class]
+// , ['create' => Permissions::class]
+// , ['read' => Permissions::class]
+// , ['update' => Permissions::class]
+// , ['update' => Permissions::class]
+// , ['delete' => Permissions::class]
+$router->get('user', 'App/Controllers/UserController.php@index', 'admin.user.index');
+$router->get('user/create', 'App/Controllers/UserController.php@create', 'admin.user.create');
+$router->post('user/store', 'App/Controllers/UserController.php@store', 'admin.user.store');
+$router->get('user/{id}', 'App/Controllers/UserController.php@show', 'admin.user.show');
+$router->get('user/{id}/edit', 'App/Controllers/UserController.php@edit', 'admin.user.edit');
+$router->post('user/{id}/update', 'App/Controllers/UserController.php@update', 'admin.user.update');
+$router->get('user/{id}/destroy', 'App/Controllers/UserController.php@destroy', 'admin.user.destroy');
 
 //Product routes
 $router->get('products', 'App/Controllers/ProductController.php@index', 'products');
