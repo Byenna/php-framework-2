@@ -39,8 +39,10 @@ $router->get('admin', 'App/Controllers/AdminController.php@index', 'admin',[
 
 
 // User routes
-$router->get('user', 'App/Controllers/UserController.php@index', 'admin.user.index', ['show' => Permissions::class]);
-$router->get('user/create', 'App/Controllers/UserController.php@create', 'admin.user.create', ['create' => Permissions::class]);
+// , ['show' => Permissions::class]
+// , ['create' => Permissions::class]
+$router->get('user', 'App/Controllers/UserController.php@index', 'admin.user.index');
+$router->get('user/create', 'App/Controllers/UserController.php@create', 'admin.user.create');
 $router->post('user/store', 'App/Controllers/UserController.php@store', 'admin.user.store', ['create' => Permissions::class]);
 $router->get('user/{id}', 'App/Controllers/UserController.php@show', 'admin.user.show', ['read' => Permissions::class]);
 $router->get('user/{id}/edit', 'App/Controllers/UserController.php@edit', 'admin.user.edit', ['update' => Permissions::class]);

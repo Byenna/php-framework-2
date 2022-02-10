@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  align-content: center;  
+  flex-wrap: wrap;
+  max-width: 50em;
+}
+
+.coo {
+   
+    display: flex;
+    justify-content: center;
+   
+    
+}
