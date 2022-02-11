@@ -1,12 +1,34 @@
+<div class="container-xl">
 <header>
-    <div class="row">
-        <div class="col-md-10">
-            <h1>Admin</h1>
+
+    <nav class="text-white">
+
+        <div class="row">
+            <div class="col-md-3">
+                <h1>Admin</h1>
+            </div>
+
+            <div class=" fs-2 col-md-3">
+                <div><a href="/user">List all users</a></div>
+            </div>
+
+            <div class=" fs-2 col-md-3">
+                <div><a href="/create">Create new user</a></div>
+            </div>
+
+            <div class="fs-2 col-md-3">
+                <div><a href="/products">Products</a></div>
+            </div>
+
+            <div class="col-md-3 text-right pr-4">
+                <a href="logout">Uitloggen</a>
+                <div><?= fullNameFromSession() ?></div>
+            </div>
         </div>
 
-        <div class="col-md-2 text-right pr-4">
-            <a href="logout">Uitloggen</a>
-            <div><?= fullNameFromSession() ?></div>
-        </div>
-    </div>
+        
+
+    </nav>
+    
 </header>
+</div>

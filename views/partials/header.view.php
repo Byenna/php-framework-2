@@ -2,7 +2,7 @@
 <nav class="container">
 	<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparant fixed-top ">
 		<div class="container-fluid">
-			<a class="navbar-brand fs-1 text-white" href="/home_text">{{ appName }}</a>
+			<a class="navbar-brand fs-1 text-white" href="/">{{ appName }}</a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

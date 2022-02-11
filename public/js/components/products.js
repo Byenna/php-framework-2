@@ -48,7 +48,8 @@ Vue.component('products', {
                 <p>Voorraad: {{ product.stock }}</p>
                 <div class="row">                       
                     <input type="button" class="col-md-4 fs-5 btn position-absolute bottom-0 start-0 my-1 mx-1" :disabled="product.stock === 0" @click="addToCart(product)" value="Order">                
-                </div>
+                    <a :href="'products/' + product.id">Meer info</a>
+                    </div>
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@
 use App\Middleware\WhenNotLoggedin;
 use App\Middleware\Permissions;
 
-$router->get('home_text', 'App/Controllers/HomeController.php@home_text', 'root');
+$router->get('', 'App/Controllers/HomeController.php@home_text', 'root');
 $router->get('home', 'App/Controllers/HomeController.php@index', 'home');
 $router->get('home/products', 'App/Controllers/HomeController.php@products', 'home.products');
 
