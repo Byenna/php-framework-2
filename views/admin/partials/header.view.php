@@ -1,3 +1,4 @@
+<div class="container-xl">
 <header>
 
     <nav class="text-white">
@@ -8,7 +9,11 @@
             </div>
 
             <div class=" fs-2 col-md-3">
-                <div><a href="/user">Users</a></div>
+                <div><a href="/user">List all users</a></div>
+            </div>
+
+            <div class=" fs-2 col-md-3">
+                <div><a href="/create">Create new user</a></div>
             </div>
 
             <div class="fs-2 col-md-3">
@@ -21,5 +26,9 @@
             </div>
         </div>
 
+        
+
     </nav>
+    
 </header>
+</div>

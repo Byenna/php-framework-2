@@ -13,16 +13,15 @@
     <p class="card-text"><?= $user->email ?></p>
 
     <a href="/user/<?= $user->id ?>/edit">
-        <button class="btn btn-primary">Edit</button>
+        <button class="btn ">Edit</button>
     </a>
-    <a href="/user/<?= $user->id ?>/destroy">
-    <button class="btn btn-primary">Destroy</button>
+    
 
     <a href="/user/<?= $user->id ?>/store">
-    <button class="btn btn-primary">Store</button>
+    <button class="btn ">Store</button>
 
-    <a href="/user/<?= $user->id ?>/update">
-    <button class="btn btn-primary">Verwijderen</button>
+    <a href="/user/<?= $user->id ?>/destroy">
+    <button class="btn destroy_btn">Destroy</button>
 
    
   </div>

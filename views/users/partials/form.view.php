@@ -1,4 +1,10 @@
-<form method="Vars" action="Vars">
+
+
+<div class="register-overlay">
+    <div class="center-box register-form">
+        
+
+<form method="Vars" action="Vars" class="edit-overlay">
     <div class="container mt-5">
         <div class="row mb-3">
             <div class="col-md-4">
@@ -26,7 +32,9 @@
             <div class="col-md-6">
                 <select name="role">
                     <option value="0">Kies een rol...</option>
-                    
+                    <option value="0">1</option>
+                    <option value="0">2</option>
+                    <option value="0">3</option>
                         <option value="Vars"></option>
                     
                 </select>
@@ -45,3 +53,6 @@
         <input type="submit" value="Opslaan">
     </div>
 </form>
+
+    </div>
+</div>
