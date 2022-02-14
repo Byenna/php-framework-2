@@ -21,9 +21,11 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #a2b761;
 }
 
-p {
+p, input {
     font-family:Arial, Helvetica, sans-serif;
 }
+ 
+
 
 .header {
     height: 200px;
@@ -70,8 +72,8 @@ a:visited {
 
 .center-box {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 39%;
+    top: 55%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     z-index: 15;

@@ -13,11 +13,14 @@
             </div>
 
             <div class=" fs-2 col-md-3">
-                <div><a href="/create">Create new user</a></div>
+                <div><a href="/user/create">Create new user</a></div>
             </div>
+
+            
 
             <div class="fs-2 col-md-3">
                 <div><a href="/products">Products</a></div>
+            
             </div>
 
             <div class="col-md-3 text-right pr-4">
@@ -25,6 +28,8 @@
                 <div><?= fullNameFromSession() ?></div>
             </div>
         </div>
+
+        
 
         
 
