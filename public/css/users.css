@@ -16,3 +16,12 @@
 .destroy_btn {
   background-color: brown !important
 }
+
+.link_create_user {
+  padding-left: 14px;
+  margin-left: 10px;
+}
+
+.link_create_user:hover {
+  color: black !important;
+}

@@ -12,14 +12,8 @@
                 <div><a href="/user">List all users</a></div>
             </div>
 
-            <div class=" fs-2 col-md-3">
-                <div><a href="/user/create">Create new user</a></div>
-            </div>
-
-            
-
             <div class="fs-2 col-md-3">
-                <div><a href="/products">Products</a></div>
+                <div><a href="/products">List all products</a></div>
             
             </div>
 

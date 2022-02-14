@@ -10,9 +10,13 @@
     <div class="col-md-4 text-white text-center "><h1 class="text-nowrap display-1">De users</h1></div>
     <div class="col-md-4"></div>
   </div>
+<div class="row" style="width: 40rem;">
+  <div class=" fs-2 col-md-12">
+      <div ><a class="link_create_user text-white" href="/user/create">Create new user</a></div>
+ 
 
   <?php foreach ($users as $user) : ?> 
-    <div class="container">
+    <div class="container" >
     <div class="card ">
     <div class="card-body" width="200">
     <img src="/public/images/website/dummy.png" width="300">
@@ -24,6 +28,7 @@
     </div>
     </div>
   <?php endforeach ?> 
+  </div>
   </div>
   </div>
 </div>

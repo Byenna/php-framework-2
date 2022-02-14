@@ -78,7 +78,7 @@ class UserController extends Controller
         ]);
     }
 
-    /**
+  /**
      * Updates a user record into the database
      */
     public function update()
@@ -90,10 +90,11 @@ class UserController extends Controller
 
         // Create a password, set created_by ID and set the date of creation
         $user['updated_by'] = Helper::getUserIdFromSession();
-        $user['updated'] = date('Y-m-d H:i:s');
+        $user['updated_at'] = date('Y-m-d H:i:s');
 
         UserModel::load()->update($user, (int)$userId);
     }
+
 
     /**
      * Show user record
