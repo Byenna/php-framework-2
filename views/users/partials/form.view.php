@@ -24,17 +24,17 @@
             </div>
         </div>
 
-        <!-- <div class="row mb-3">
+        <div class="row mb-3">
             <div class="col-md-6">
                 <select name="role">
-                    <option value="0">Kies een rol...</option>
+                    <option value="<?= isset($user) ? $user->role : '3' ?>">Kies een rol...</option>
 
                     <?php foreach($roles as $role) : ?>
-                        <option value="<?= $role->id ?>"><?= $role->friendly_name ?></option>
+                        <option value="<?= $role->id ?>"><?= $role->name ?></option>
                     <?php endforeach ?>
                 </select>
             </div>
-        </div> -->
+        </div>
 
       
         <div class="row mb-3">

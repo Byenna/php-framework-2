@@ -15,8 +15,16 @@
     <div class="row">
         <div class="col-md justify-content-center">
             <h2 class="text-center text-white display-1"><img src='<?= $image ?>' width="250"></h2>
+            <a href="<?= $id ?>/edit">
+            <button class="btn ">Edit</button>
+          </a>
+
+          <a href="/products/<?= $id ?>/destroy">
+            <button class="btn destroy_btn">Destroy</button>
+          </a>
          </div>
     </div>
+   
 </div>
 
 <div class="container-xl pt-4 detail_background">

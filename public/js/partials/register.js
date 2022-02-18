@@ -11,7 +11,7 @@ $(document).ready(function() {
                 
                 if (data.success) {
                     $('form[name="frmRegister"] input[type="submit"]').prop('disabled', false)
-                    window.location.href = "/";
+                    window.location.href = "/thanx";
                 } else {
                     $('#register-message').html(data.message).show()
                 }

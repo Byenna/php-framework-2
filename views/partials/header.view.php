@@ -25,17 +25,17 @@
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item fs-4" href="/about">Wie zijn wij?</a></li>
 							<li><a class="dropdown-item fs-4" href="/volunteer">Vrijwilliger worden?</a></li>
-							<li><a class="dropdown-item fs-4" href="/products">Naar de details pagina</a></li>
+							<li><a class="dropdown-item fs-4" href="/login">Mijn Voedselbos</a></li>
 						</ul>
 					</li>
 				</ul>
 
 				<form class="d-flex ">
-
+					<p class="fs-4 full_session_name"><?= fullNameFromSession() ?></p>
 					<a class="btn btn_login fs-3" type="button" href="/login">Login</a>
 					<a class="btn btn_register fs-3" type="button" href="/register">Registreer</a>
 
-               <?= fullNameFromSession() ?>
+               
 
                <shopping-cart ref="shoppingCart"></shopping-cart>
 				</form>

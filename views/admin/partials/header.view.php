@@ -1,33 +1,41 @@
-<div class="container-xl">
-<header>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparant fixed-top ">
+		<div class="container-fluid">
+        <a class="navbar-brand fs-1 text-white" href="/"><h1>Admin</h1></a>
 
-    <nav class="text-white">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-        <div class="row">
-            <div class="col-md-3">
-                <h1>Admin</h1>
-            </div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <div class=" fs-2 col-md-3">
-                <div><a href="/user">List all users</a></div>
-            </div>
+                
 
-            <div class="fs-2 col-md-3">
-                <div><a href="/products">List all products</a></div>
-            
-            </div>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle  fs-1 text-white" id="navbarDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">Actions
+						</a>
 
-            <div class="col-md-3 text-right pr-4">
-                <a href="logout">Uitloggen</a>
-                <div><?= fullNameFromSession() ?></div>
-            </div>
-        </div>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item fs-4" href="/user">List of all users</a></li>
+							<li><a class="dropdown-item fs-4" href="/products">List of all products</a></li>
+						</ul>
+					</li>
+				</ul>
 
-        
+				<form class="d-flex ">
+					<p class="fs-4 text-white full_session_name"><?= fullNameFromSession() ?></p>
+					<a class="btn btn_login fs-3" type="button" href="/logout">Uitloggen</a>
+					
 
-        
+                    
 
-    </nav>
-    
-</header>
-</div>
+               
+				</form>
+			</div>
+		</div>
+	</nav>
+
+

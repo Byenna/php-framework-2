@@ -16,6 +16,7 @@ use App\Middleware\Permissions;
 
 $router->get('', 'App/Controllers/HomeController.php@home_text', 'root');
 $router->get('home', 'App/Controllers/HomeController.php@index', 'home');
+$router->get('thanx', 'App/Controllers/HomeController.php@thanx', 'home');
 $router->get('home/products', 'App/Controllers/HomeController.php@products', 'home.products');
 
 $router->get('login', 'App/Controllers/LoginController.php@index', 'login');
@@ -48,5 +49,10 @@ $router->post('user/{id}/update', 'App/Controllers/UserController.php@update', '
 $router->get('user/{id}/destroy', 'App/Controllers/UserController.php@destroy', 'admin.user.destroy', ['delete' => Permissions::class]);
 
 //Product routes
-$router->get('products', 'App/Controllers/ProductController.php@index', 'products');
-$router->get('products/{id}', 'App/Controllers/ProductController.php@show', 'products.show');
+$router->get('products', 'App/Controllers/ProductController.php@index', 'admin.products.index', ['show' => Permissions::class]);
+$router->get('products/create', 'App/Controllers/ProductController.php@create', 'admin.products.create', ['create' => Permissions::class]);
+$router->post('products/store', 'App/Controllers/UserController.php@store', 'admin.products.store', ['create' => Permissions::class]);
+$router->get('products/{id}', 'App/Controllers/ProductController.php@show', 'admin.products.show', ['read' => Permissions::class]);
+$router->get('products/{id}/edit', 'App/Controllers/UserController.php@edit', 'admin.products.edit', ['update' => Permissions::class]);
+$router->post('products/{id}/update', 'App/Controllers/UserController.php@update', 'admin.products.update', ['update' => Permissions::class]);
+$router->get('products/{id}/destroy', 'App/Controllers/UserController.php@destroy', 'admin.products.destroy', ['delete' => Permissions::class]);

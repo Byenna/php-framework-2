@@ -57,12 +57,19 @@ class RegisterController
             $msg = new \Plasticbrain\FlashMessages\FlashMessages();
             $msg->info('Welcome <strong>' . $data['first_name'] . '</strong>!');
             
+ 
+
             return json_encode([
                 'success'  => true,
-                'message'  => "Ok :-)",
-                'redirect' => "home"
+                // 'message'  => "Ok :-)",
+                // 'redirect' => "/thanx"
             ]);
         }
     }
+
+    // public function thanx()
+    // {
+    //    return View::render('thanx/thanx.view');
+    // }
 
 }

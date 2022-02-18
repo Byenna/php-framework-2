@@ -1,4 +1,4 @@
-.img_items {
+.img_items_admin {
     height: 28em;
     width: auto;
 }
@@ -23,8 +23,16 @@
 
 .img_items {
 	transition: all 1s;
+    height: 28em;
+    width: auto;
 }
 
 .img_items:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
+}
+
+.link_show_product {
+    /* position: fixed; */
+    bottom: 0;
+    right: 0;
 }

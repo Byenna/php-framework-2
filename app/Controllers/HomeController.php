@@ -49,5 +49,10 @@ class HomeController
     {
         return View::render('home_text/home_text.view');
     }
+
+    public function thanx()
+    {
+        return View::render('thanx/thanx.view');
+    }
 }
 
